@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 64px 0px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #3B3B3B;
+}
+
+.font-weight-light { font-weight: 100; }
+.font-weight-regular { font-weight: 400; }
+.font-weight-medium { font-weight: 500 }
+.font-weight-bold { font-weight: 700; }
+
+header {
+    position: fixed;
+    top: 0;
+    background: #3B3B3B;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+section.logo { 
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #3B3B3B;
+}
+
+section.logo img { 
+    width: 120px;
+    margin-left: 56px; 
+}
+
+section.container {
+    margin: auto;
+    width: calc(100% - 112px);
+}
+
+div.header--buttons {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+}
+
+.header--button {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.header--button img {
+    width: 10px;
+    margin-left: 8px;
+}
+
+.header--button:hover {
+    background-color: #26C281;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+div.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+div.mosaic--notices {
+    max-width: 1160px;
+    margin: auto;
+    padding-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 16px;
+    row-gap: 16px;
+}
+
+div.mosaic--notice {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    font-weight: 700;
+    height: 232px;
+    max-width: 376px;
+    border-radius: 6px;
+}
+
+div.mosaic--notice.notice-1 { background-image: url(./notice-1.jpg); }
+div.mosaic--notice.notice-2 { background-image: url(./notice-2.jpg); }
+div.mosaic--notice.notice-3 { background-image: url(./notice-3.jpg); }
+div.mosaic--notice.notice-4 { background-image: url(./notice-4.jpg); }
+div.mosaic--notice.notice-5 { background-image: url(./notice-5.jpg); }
+div.mosaic--notice.notice-6 { background-image: url(./notice-6.jpg); }
+
+div.mosaic--notice:hover {
+    cursor: pointer;
+    box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),
+        0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+        0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 150ms ease-in-out;
+}
+
+div.hr {
+    background: #FFFFFF;
+    height: 2px;
+    width: 100%;
+}
+
+div.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div.highlights {
+    max-width: 1160px;
+    margin: auto;
+    padding-top: 16px;
+}
+
+div.highlights .title {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    border-bottom: 1px solid #3B3B3B;
+    font-size: 32px;
+    font-weight: 700;
+    color: #3B3B3B;
+    margin-bottom: 16px;
+}
+
+
+div.highlights-notices {
+    display: grid;
+    grid-template-columns: repeat(3, 246px);
+    column-gap: 16px;
+}
+
+div.highlights-notice {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
